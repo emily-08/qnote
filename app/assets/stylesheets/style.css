@@ -1,0 +1,46 @@
+/* ユーザー(device) */
+html { height: 100%; }
+
+.contents {
+  /* position: relative; */
+  min-height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  /* background-size: contain; */
+  /* background-repeat: no-repeat; */
+  background-position: 50% 40%;
+  background-image: linear-gradient(90deg, rgba(241, 245, 244, 0.55), rgba(240, 245, 244, 0.8)) , url(jeshoots-com-pUAM5hPaCRI-unsplash.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  color: black;
+  /* position: absolute; */
+  font-size: 30px;
+  margin: auto 200px;
+}
+
+h1 {
+  font-size: 90px;
+  text-align: center;
+}
+
+h2 {
+ font-size: 40px;
+ text-align: center;
+}
+
+.actions {
+ padding: 20px 0;
+}
+
+nobr {
+ font-size: 20px;
+}
+
+.logout {
+  font-size: 18px;
+}
+/* ユーザー(device)

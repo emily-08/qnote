@@ -1,0 +1,22 @@
+<div class="contents row">
+  <div class="container">
+    <h1>Qnote</h1>
+    <h2>ログイン</h2>
+    <%= form_with model: @user, url: user_session_path, id: 'new_user', class: 'new_user', local: true do |f| %>
+      <div class="field">
+        <%= f.label :email %><br />
+        <%= f.email_field :email, autofocus: true %>
+      </div>
+
+      <div class="field">
+        <%= f.label :password %><br />
+        <%= f.password_field :password, autocomplete: "off" %>
+      </div>
+
+      <div class="actions">
+        <%= f.submit "ログイン" %>
+      </div>
+    <% end %>
+    <p>新規登録がまだの方は<%= link_to "新規登録画面へ", new_user_registration_path, class: "item-red-btn" %></p>
+  </div>
+</div>
