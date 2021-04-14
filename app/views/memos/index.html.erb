@@ -1,8 +1,17 @@
 <div class="grid-container">
   <header>ヘッダー</header>
   <nav>ジャンル</nav>
-  <main>メモ</main>
-  <aside>辞書</aside>
+  <main>メモ
+    <div class="memos">
+      <% @memos.each do |memo| %>
+          <p><%= memo.title %></p>
+          <p><%= memo.text %></p>
+        </div>
+      <% end %>
+   </div>
+  </main>
+  <aside>辞書
+  </aside>
   <footer>フッター</footer>
   <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %>
 </div>

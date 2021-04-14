@@ -1,0 +1,10 @@
+<div class="memo new">
+  <div class="memo_new_form">
+    <h3>投稿する</h3>
+    <%= form_with(model: @memo, local: true) do |form| %>
+      <%= form.text_field :title, placeholder: "Title" %>
+      <%= form.text_area :text, placeholder: "text", rows: "10" %>
+      <%= form.submit "SEND" %>
+    <% end %>
+  </div>
+</div>
